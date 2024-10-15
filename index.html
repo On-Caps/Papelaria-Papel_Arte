@@ -1,0 +1,1679 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papelaria Papel Arte</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="CSS/estilo.css">
+
+</head>
+<body>
+
+  <div class="titlediv">
+    
+  </div>
+
+  <div class="mainnav">
+    <div class="navtabdiv">
+      <div style="height: 10px;"></div>
+      <button class="navtab" onclick="expandir()">
+        <div style="height: 18%;"></div>
+        <div class="whitetab"></div>
+        <div style="height: 14.28%;"></div>
+        <div class="whitetab"></div>
+        <div style="height: 14.28%;"></div>
+        <div class="whitetab"></div>
+        <div style="height: 17%;"></div>
+      </button>
+      <div style="height: 20px;"></div>
+    </div>
+    <div class="titlediv">
+      <img src="Imagens/logohorizontal3.png" class="logohorizontal" alt="">
+    </div>
+    <div class="phonediv">
+      <div class="phoneicon">
+        <a href="https://wa.me/5511943536095" style="width: 100%; height: 100%;"><img src="Imagens/whatsapp_icon.png" alt="" style="width: 100%; height: 100%; margin: auto;"></a>
+      </div>
+    </div>
+  </div>
+    
+  <div class="secnav">
+    <div class="navbuttonborders"></div>
+      <div class="navbuttondivs d-flex justify-content-center">
+        <a class="navbutton" href="telas/tela_impressoes/impressoes.html">IMPRESSÕES</a>
+            <a class="navbutton" href="telas/tela_normas/normas.html">NORMAS</a>
+            <a class="navbutton" href="telas/tela_encadernacao/encadernacao.html">ENCADERNAÇÃO</a>
+            <a class="navbutton" href="telas/tela_plastificacao/plastificacao.html">PLASTIFICAÇÃO</a>
+            <a class="navbutton" href="https://wa.me/5511943536095/?text=Olá! Pode me dar mais informações sobre o serviço de digitação?">DIGITAÇÃO</a>
+            <button class="navbutton" onclick="box.showModal(), togglemodal('box')">DIGITALIZAÇÃO</button>
+      </div>
+    <div class="navbuttonborders"></div>
+  </div>
+
+    <div class="tab" id="tab1">
+      <button class="tabitem dropdown-item" onclick="papelaria_box.showModal(), togglemodal('papelaria_box')">Papelaria</button>
+      <button class="tabitem dropdown-item" onclick="escritorio_box.showModal(), togglemodal('escritorio_box')">Escritório</button>
+      <button class="tabitem dropdown-item" onclick="escolares_box.showModal(), togglemodal('escolares_box')">Escolares</button>
+      <button class="tabitem dropdown-item" onclick="armarinho_box.showModal(), togglemodal('armarinho_box')">Armarinho</button>
+      <button class="tabitem dropdown-item" onclick="brinquedos_box.showModal(), togglemodal('brinquedos_box')">Brinquedos Educativos</button>
+    </div>
+
+    <!--Modal de digitalização-->
+    <dialog id="box" style="display: none;">
+      <div class="modal-header" style="text-align: center;">
+        <h3>Digitalização</h2>
+        <button class="btn-modal" onclick="box.close(), togglemodal('box')">X</button>
+      </div>
+
+      <div class="modal-body" style="font-size: 20px;">
+        <p>   O nosso sistema de digitalização consiste em transformar documentos físicos em documentos digitais.</p>
+        <p></p>
+        <p>   Vá em nossa loja para digitalizarmos o seu arquivo! &#x1F609
+        </p>
+      </div>
+
+      <br> 
+      
+      <div style="margin-left: 225px;">
+        <button type="button" class="btn-success btn"><a href="https://wa.me/5511943536095" style="color: white; text-decoration: none;">Whatsapp</a></button>
+        <button type="button" class="btn" style=" background-color: rgb(226, 226, 227);">
+            <img src="Imagens/google-maps.png" alt="" height="22px" width="22px">
+            <a href="https://www.google.com/maps/place/Papelaria+Papel+Arte/@-23.1199657,-46.5817955,15z/data=!4m2!3m1!1s0x0:0x6cbf573a4e00c584?sa=X&ved=1t:2428&ictx=111" style="color: rgb(18, 18, 18); text-decoration: none;">Nossa loja</a></button>
+      </div>
+    </dialog>
+
+    <!--Modal Ajuda Compras Pelo Site-->
+
+    <dialog id="compras_box" style="display: none;">
+      <div class="modal-header" style="text-align: center; margin: auto;">
+        <h3 style="text-align: center;">Compras pelo site</h3>
+        <button class="btn-modal" onclick="compras_box.close(), togglemodal('compras_box')">X</button>
+      </div>
+
+      <div class="modal-body" style="font-size: 20px;">
+        <p>   Adicione itens ao CARRINHO DE COMPRAS (No canto inferior direito da tela) clicando no botão "Comprar" do produto desejado</p>
+        <p></p>
+        <p>   Assim que estiver satisfeito com sua escolha, clique em "Concluir Pedido" no CARRINHO (ATENÇÃO! Ao reiniciar ou sair da página, o CARRINHO e seus produtos serão resetado)
+        </p>
+      </div>
+
+    </dialog>
+
+    <!--Modal Formas de Pagamento-->
+
+    <dialog id="formas_box" style="display: none;">
+      <div class="modal-header" style="text-align: center; margin: auto;">
+        <h3 style="text-align: center;">Formas de Pagamento</h3>
+        <button class="btn-modal" onclick="formas_box.close(), togglemodal('formas_box')">X</button>
+      </div>
+
+      <div class="modal-body" style="font-size: 20px;">
+        <p>   Atualmente nós aceitamos as seguintes formas de pagamento:</p>
+        <p></p>
+        <p>   Pix, Cédulas, Cartão.
+        </p>
+      </div>
+
+    </dialog>
+
+    <div style="opacity: 0%;">
+      <!--Modal Escritório-->
+    
+      <dialog id="escritorio_box" style="display: none;">
+        <div class="modal-header" style="background-color: #2cb0d8;">
+          <label class="titulo-modal-cat">ESCRITÓRIO</label>
+          <button class="btn-close" onclick="escritorio_box.close(), togglemodal('escritorio_box')"></button>
+        </div>
+  
+        <div class="modal-body">
+          <div class="grade-modal">
+  
+            <!--Itens Modal-->
+  
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Materiais de Escritório/AlmofadaCarimbo.jpeg" class="card-img-top" alt="..." height="200px" width="200px" >
+                  <div class="card-body">
+                    <h5 class="card-title">Almofada para carimbo</h5>
+                    <p class="card-text">Fabricadas em caixas de plástico com tampa, medindo 105 X 65 mm. Encontrada em manta de feltro branco ( sem tinta ) pronta para ser entintada manualmente.</p>
+                    <button class="btn btn-success" onclick="produto('Almofada para carimbo')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Materiais de Escritório/calculadora-de-mesa.jpeg" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Calculadora eletrônica de mesa </h5>
+                    <p class="card-text">Super econômica é alimentada por pilha AA e se utilizado diariamente, ultrapassa um ano de utilização com a mesma pilha sem necessidade de troca.</p>
+                    <button class="btn btn-success" onclick="produto('Calculadora eletrônica de mesa')">Comprar</button>
+                  </div>
+                </div>
+             </div>
+  
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Materiais de Escritório/CarimboAutomaticoPago.webp" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Carimbo Automativo </h5>
+                    <p class="card-text">Carimbo Automático Escrita automática com área de impressão 38mm x 14mm.</p>
+                    <button class="btn btn-success" onclick="produto('Carimbo Automativo')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Materiais de Escritório/clips_para_papeis.webp" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Clips para Papéis </h5>
+                    <p class="card-text">Os Clips Para Papéis De Aço Galvanizado N.3 para manter sua documentação organizada com uma embalagem prática contendo 450 unidades. </p>
+                    <button class="btn btn-success" onclick="produto('Clips para Papéis')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Materiais de Escritório/envelope-saco-contrato.jpeg" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Envelope Saco Contrato </h5>
+                    <p class="card-text"> Envelope Saco Kraft/Pardo A4 240x340 90g. Marca: T10 OFFICE. </p>
+                    <button class="btn btn-success" onclick="produto('Envelope Saco Contrato')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+  
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Materiais de Escritório/etiqueta-pequena-para-preco.jpg" class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Etiqueta Pequena </h5>
+                      <p class="card-text">Etiqueta Adesiva Rolo Pequena N2 Aplicação Fácil 22x14mm Uni' é uma etiqueta multiuso, adesiva, ideal para marcação e codificação de produtos.  </p>
+                      <button class="btn btn-success" onclick="produto('Etiqueta Pequena')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Materiais de Escritório/fita-adesiva.webp" class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Fita Adesiva </h5>
+                      <p class="card-text"> Fita produzida com filme de polipropileno biorientado (bopp) revestido com adesivo acrílico. Comprimento de 50m. </p>
+                      <button class="btn btn-success" onclick="produto('Fita Adesiva')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Materiais de Escritório/Fita-crepe-18mmx50m.webp" class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Fita Crepe 18mmx50m </h5>
+                      <p class="card-text"> A Fita Crepe 18mmx50 metros é uma fita adesiva de alta qualidade, projetada para oferecer uma forte aderência em diversas superfícies. Ela é revestida com um adesivo de borracha sintética, que garante uma adesão forte e duradoura, mesmo em condições adversas de temperatura e umidade. </p>
+                      <button class="btn btn-success" onclick="produto('Fita Crepe 18mmx50m')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Materiais de Escritório/FITA-DUPLA-FACE-3M-4420-24MM-X-2M.webp" class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Fita DuplaFace 3M</h5>
+                      <p class="card-text">  Com ela você pode pendurar seus objetos de decoração e canaletas elétricas sem precisar fazer sujeira, sem furar paredes e sem perder muito tempo! Ela é de fixação permanente, assim você pendura tudo o que precisa sem se preocupar com futuras manutenções. É muito prático! Com aplicação rápida, limpa e simples, a fita também promove isolamento anticorrosivo entre chapas metálicas. </p>
+                      <button class="btn btn-success" onclick="produto('Fita DuplaFace 3M')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Materiais de Escritório/fita_adesiva_transparente_72mm_x_100m.webp" class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Fita Adesiva Tranparente </h5>
+                      <p class="card-text"> A fita adesiva transparente com adesivo acrílico a base de água gruda, com alto poder de fixação, em diversas superfícies. Produzida em polipropileno bi-orientado ela é resistente e durável, tem como finalidade proporcionar segurança e um excelente fechamento das suas embalagens. </p>
+                      <button class="btn btn-success" onclick="produto('Fita Adesiva Tranparente')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Materiais de Escritório/Grampeador.jpeg" class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Grampeador </h5>
+                      <p class="card-text"> Grampeador metálico preto, compatível com grampos 26/6 e 24/6 e grampeia até 20 folhas. Fabricante CIS. </p>
+                      <button class="btn btn-success" onclick="produto('Grampeador')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Materiais de Escritório/grampo-5000.jpeg" class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Pacote de Grampo 5000 </h5>
+                      <p class="card-text"> Marca	Leonora, cor	Prata, 5000 peças de aço galvanizado. </p>
+                      <button class="btn btn-success" onclick="produto('Pacote de Grampo 5000')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+  
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Materiais de Escritório/pasta-grampo.webp" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Pasta com Grampo </h5>
+                    <p class="card-text"> Pasta dobrada em cartão triplex (275g/m²) pintado e plastificado na cor. Tamanho ofício. Ideal para guardar documentos e trabalhos escolares. </p>
+                    <button class="btn btn-success" onclick="produto('Pasta com Grampo')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Materiais de Escritório/pasta-sanfonada.webp" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Pasta Sanfonada </h5>
+                    <p class="card-text"> Pasta Sanfonada 12 Divisões cinza e transparente. </p>
+                    <button class="btn btn-success" onclick="produto('Pasta Sanfonada')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Materiais de Escritório/pasta-transaparente-L.webp" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Pasta Tranparente </h5>
+                    <p class="card-text"> Pasta Apresentação Ofício Polipropileno Transparente. </p>
+                    <button class="btn btn-success" onclick="produto('Pasta Tranparente')">Comprar</button>
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+    </dialog>
+    
+      <!--Brinquedos Educativos-->
+      
+      <dialog id="brinquedos_box" style="display: none;">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: #2cb0d8;">
+              <h1 class="titulo-modal-cat">BRINQUEDOS EDUCATIVOS</h1>
+              <button class="btn-close" onclick="brinquedos_box.close(), togglemodal('brinquedos_box')"></button>
+            </div>
+            <div class="modal-body">
+              <div class="grade-modal">
+    
+                <!--Itens-->
+    
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Brinquedos Educativos/Abc com 12 peças - Xalingo.webp  " class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Abc com 12 peças - Xalingo </h5>
+                      <p class="card-text"> Conjunto educativo com 12 peças que ajudam as crianças a aprender o alfabeto de forma divertida e interativa.</p>
+                      <button class="btn btn-success" onclick="produto('Abc com 12 peças - Xalingo')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Brinquedos Educativos/Amigos da Escola - Eu Amo Papelão.webp  " class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Amigos da Escola - Eu Amo Papelão </h5>
+                      <p class="card-text">Pequenas figuras de papelão em formato de pessoas, ideais para brincadeiras criativas e narrativas.</p>
+                      <button class="btn btn-success" onclick="produto('Amigos da Escola - Eu Amo Papelão')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Brinquedos Educativos/Blocos Brincando de Engenheiro - Xalingo.jpeg  " class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Blocos Brincando de Engenheiro </h5>
+                      <p class="card-text">Kit de construção com blocos para montar castelos e outras estruturas, estimulando o raciocínio lógico e a criatividade das crianças.</p>
+                      <button class="btn btn-success" onclick="produto('Blocos Brincando de Engenheiro')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Brinquedos Educativos/Blocos Magnéticos - Ulla.webp  " class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Blocos Magnéticos </h5>
+                      <p class="card-text">Brinquedo de blocos de construir, ideal para estimular a criatividade e o desenvolvimento cognitivo das crianças. Com peças coloridas e encaixáveis, permite montar diversas formas e estruturas, garantindo diversão e aprendizado.</p>
+                      <button class="btn btn-success" onclick="produto('Blocos Magnéticos')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Brinquedos Educativos/brinquedo-multiblocks-mix-xalingo-.jpg  " class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Brinquedo Multiblock </h5>
+                      <p class="card-text">Brinquedo de blocos de construir, ideal para estimular a criatividade e o desenvolvimento cognitivo das crianças. Com peças coloridas e encaixáveis, permite montar diversas formas e estruturas, garantindo diversão e aprendizado. </p>
+                      <button class="btn btn-success" onclick="produto('Brinquedo Multiblock')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Brinquedos Educativos/Brinquedos Dinamicos de Areia.jpeg  " class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Brinquedos Dinamicos de Areia </h5>
+                      <p class="card-text">Areia colorida para modelagem que permite criar formas e esculturas, proporcionando uma experiência sensorial divertida e criativa. </p>
+                      <button class="btn btn-success" onclick="produto('Brinquedos Dinamocos de Areia')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Brinquedos Educativos/Carocol - Fabrica de Sonhos.jpg  " class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Caracol - Fabrica de Sonhos </h5>
+                      <p class="card-text">Quebra-cabeça em formato de caracol com peças blocadas, perfeito para desenvolver habilidades motoras e cognitivas. </p>
+                      <button class="btn btn-success" onclick="produto('Caracol - Fabrica de Sonhos')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Brinquedos Educativos/Colmeia Inteligente.png  " class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Colmeia Inteligente </h5>
+                      <p class="card-text">Este quebra-cabeça infantil em forma de colmeia é perfeito para estimular a coordenação motora e o raciocínio lógico das crianças. </p>
+                      <button class="btn btn-success" onclick="produto('Colmeia Inteligente')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Brinquedos Educativos/Giz de Cera Apiscor.webp  " class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Kit Giz de Cera - Apiscor </h5>
+                      <p class="card-text">O giz de cera infantil Apiscor oferece cores vibrantes e traços suaves, ideais para incentivar a criatividade das crianças. </p>
+                      <button class="btn btn-success" onclick="produto('Kit Giz de Cera - Apiscor')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Brinquedos Educativos/Io-iô - Fabrica de Sonhos.webp  " class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Io-iô - Fabrica de Sonhos </h5>
+                      <p class="card-text">O ioiô infantil é um brinquedo clássico que proporciona horas de diversão e desafios. Com design resistente e cores vibrantes, é perfeito para ensinar truques e melhorar a coordenação motora das crianças, garantindo entretenimento em qualquer lugar.</p>
+                      <button class="btn btn-success" onclick="produto('Io-iô - Fabrica de Sonhos')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Brinquedos Educativos/Kit Giz de Louza- Apiscor.webp  " class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Kit Giz de Louza - Apiscor </h5>
+                      <p class="card-text">O giz de lousa oferece escrita suave e visível, ideal para quadros escolares ou domésticos. Disponível em cores nítidas, ele é fácil de apagar e perfeito para professores, alunos e uso criativo em atividades educativas. </p>
+                      <button class="btn btn-success" onclick="produto('Kit Giz de Louza - Apiscor')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Brinquedos Educativos/Kit Tinta Aquarela Apiscor.jpeg  " class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Kit Tinta Aquarela - Apiscor </h5>
+                      <p class="card-text">A tinta aquarela infantil é perfeita para estimular a criatividade das crianças de forma divertida e segura. Com cores brilhantes e fáceis de misturar, permite criar desenhos com efeitos suaves e artísticos. Atóxica e lavável, é ideal para pequenos artistas explorarem o mundo da pintura com liberdade e segurança.</p>
+                      <button class="btn btn-success" onclick="produto('Kit Tinta Aquarela - Apiscor')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Brinquedos Educativos/Tablet de desenho magnético - ning.webp  " class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Tablet de Desenho Magnético </h5>
+                      <p class="card-text">Painel de desenho magnético reutilizável, ideal para crianças expressarem sua criatividade sem sujeira. </p>
+                      <button class="btn btn-success" onclick="produto('Tablet de Desenho Magnético')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Brinquedos Educativos/Telefone infantil Musical.jpeg  " class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Telefone Infantil Musical </h5>
+                      <p class="card-text">O telefone sem fio musical infantil é um brinquedo interativo que combina diversão e aprendizado. Com sons divertidos e melodias cativantes, ele estimula a imaginação e as habilidades de comunicação das crianças. </p>
+                      <button class="btn btn-success" onclick="produto('Telefone Infantil Musical')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Brinquedos Educativos/torre_donuts_fabrika_dos_sonhos_1061_1_f8e9010232fc184919672ec9a53954da.webp  " class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Torre Donuts </h5>
+                      <p class="card-text">O lança argola em forma de donuts é um brinquedo divertido e educativo que ajuda a desenvolver a coordenação motora e a precisão das crianças. Com argolas coloridas para arremessar nos "donuts". </p>
+                      <button class="btn btn-success" onclick="produto('Torre Donuts')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+    
+        </div>
+            </div>
+          </div>
+      </dialog>
+    
+      <!--Armarinho-->
+      <dialog id="armarinho_box" style="display: none;">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: #2cb0d8;">
+            <h1 class="titulo-modal-cat">ARMARINHO</h1>
+            <button class="btn-close" onclick="armarinho_box.close(), togglemodal('armarinho_box')"></button>
+          </div>
+          <div class="modal-body">
+            <div class="grade-modal">
+  
+              <!--Itens-->
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Armarinho/agulha-croche-tulip-clone.webp" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Agulha de Crochê </h5>
+                    <p class="card-text"> São projetadas com um formato anatômico que proporciona um conforto excepcional e garante uma maior regularidade dos pontos. </p>
+                    <button class="btn btn-success" onclick="produto('Agulha de Crochê')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Armarinho/agulha-maquina-costura.jpg" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Agulha Máquina de Costura </h5>
+                    <p class="card-text"> Não serve em outros tipos de máquina que não seja para costura de boca de sacaria. NÃO SERVE EM WAIG, NÃO SERVE EM SIRUBA. </p>
+                    <button class="btn btn-success" onclick="produto('Agulha Máquina de Costura')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Armarinho/agulhas-agulha-costura-a-mao-agulha-de-mao.jpg" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Agulha de Costura </h5>
+                    <p class="card-text"> As agulhas são feitas de aço niquelado, garantindo durabilidade e resistência. </p>
+                    <button class="btn btn-success" onclick="produto('Agulha de Costura')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Armarinho/Barbante Cru.jpeg" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Barbante Cru </h5>
+                    <p class="card-text"> Barbante Escolar De Algodão Cru Artesanato 164 Metros número 4, ideal para suas atividades de artesanato e projetos criativos.  </p>
+                    <button class="btn btn-success" onclick="produto('Barbante Cru')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Armarinho/cordone encerado.jpeg" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Cordonê Encerado </h5>
+                    <p class="card-text"> Este fio é a escolha ideal para criar belas peças de joalheria, pulseiras, colares, chaveiros e muito mais.  </p>
+                    <button class="btn btn-success" onclick="produto('Cordonê Encerado')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Armarinho/fita de cetim.png" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Fita de Cetim </h5>
+                    <p class="card-text"> A Fita de Cetim é um item essencial para quem busca qualidade e versatilidade em seus trabalhos de artesanato e decoração.   </p>
+                    <button class="btn btn-success" onclick="produto('Fita de Cetim')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Armarinho/linha de bordado.webp" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Linha de Bordado </h5>
+                    <p class="card-text"> Com sua composição 100% algodão mercerizado, ele oferece um acabamento macio e delicado, proporcionando um toque suave em suas peças.  </p>
+                    <button class="btn btn-success" onclick="produto('Linha de Bordado')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Armarinho/Linha de Costura.jpeg" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Linha de Costura </h5>
+                    <p class="card-text">A linha de costura é essencial para reparos e criações em tecidos. Resistente e de alta qualidade, ela garante costuras firmes e duradouras em roupas, acessórios e projetos de costura criativa. </p>
+                    <button class="btn btn-success" onclick="produto('Linha de Costura')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Armarinho/Lã para Artezanato.jpeg" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Lã de Artesanato </h5>
+                    <p class="card-text">A lã de artesanato é macia e fácil de trabalhar, perfeita para tricô, crochê e outros projetos manuais. Com cores vibrantes e textura aconchegante, é ideal para criar roupas, acessórios e itens decorativos. </p>
+                    <button class="btn btn-success" onclick="produto('Lã de Artesanato')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Armarinho/elasticos.jpg" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Elástico </h5>
+                    <p class="card-text"> O elástico é um acessório prático e versátil, ideal para ajustes e confecção de roupas, acessórios e artesanato. </p>
+                    <button class="btn btn-success" onclick="produto('Elástico')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Armarinho/perola_adesiva.webp" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Pérola Adesiva </h5>
+                    <p class="card-text">As pérolas adesivas são perfeitas para decorar e personalizar diversos projetos de artesanato e scrapbooking. Fáceis de aplicar, elas proporcionam um toque de elegância e sofisticação a convites, caixas, cartões e mais. Com acabamento delicado e brilho sutil, são ideais para realçar detalhes de forma prática e rápida. </p>
+                    <button class="btn btn-success" onclick="produto('Pérola Adesiva')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Armarinho/Tinta de Tecido - Acrilex.jpeg" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Tinta de Tecido </h5>
+                    <p class="card-text">A tinta de tecido Acrilex é a escolha ideal para criar estampas vibrantes e duradouras em suas roupas e acessórios. Fácil de aplicar, seca rapidamente e não desbota com as lavagens, garantindo cores vivas por muito tempo. Perfeita para trabalhos manuais, customização e artesanato em tecidos. </p>
+                    <button class="btn btn-success" onclick="produto('Tinta de Tecido')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+    </dialog>
+    
+      <!--Papelaria-->
+      <dialog id="papelaria_box" style="display: none;">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: #2cb0d8;">
+            <h1 class="titulo-modal-cat">PAPELARIA</h1>
+            <button class="btn-close" onclick="papelaria_box.close(), togglemodal('papelaria_box')"></button>
+          </div>
+          <div class="modal-body">
+            <div class="grade-modal">
+              <!--Itens-->
+  
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Papelaria/Cartunila color DIN A2.jpeg" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Cartolina A2 </h5>
+                    <p class="card-text">A cartolina é um material versátil e resistente, ideal para projetos escolares, artesanato e decorações. Disponível em várias cores vibrantes, é perfeita para criar cartões, maquetes, cartazes e dobraduras, oferecendo durabilidade e facilidade no corte e colagem.</p>
+                    <button class="btn btn-success" onclick="produto('Cartolina A2')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Papelaria/Papel A4 500 Folhas.png" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Papel A4 500 folhas </h5>
+                    <p class="card-text">O papel A4 branco com 500 folhas é a opção perfeita para uso diário em escritórios, escolas e residências.</p>
+                    <button class="btn btn-success" onclick="produto('Papel A4 500 folhas')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Papelaria/Papel A4 Branco 100 Folhas.png" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Papel A4 100 folhas </h5>
+                    <p class="card-text">O papel A4 branco com 100 folhas é prático para quem busca uma solução econômica e eficiente para pequenas demandas de impressão e escrita.</p>
+                    <button class="btn btn-success" onclick="produto('Papel A4 100 folhas')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Papelaria/Papel A4 Branco 50 Folhas.png" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Papel A4 50 folhas </h5>
+                    <p class="card-text">O papel A4 branco com 50 folhas é perfeito para quem precisa de uma quantidade reduzida de papel com qualidade garantida. </p>
+                    <button class="btn btn-success" onclick="produto('Papel A4 50 folhas')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Papelaria/Papel A4 Color Set.png" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Papel A4 Color Set </h5>
+                    <p class="card-text">O papel Colorset com 100 folhas é ideal para quem deseja adicionar cor e criatividade aos seus projetos. </p>
+                    <button class="btn btn-success" onclick="produto('Papel A4 Color Set')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Papelaria/Papel A4 Colorido 100 Folhas.png" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Papel A4 Colorido 100 folhas</h5>
+                    <p class="card-text">O papel A4 colorido com 100 folhas é perfeito para dar vida a projetos criativos e atividades escolares. </p>
+                    <button class="btn btn-success" onclick="produto('Papel A4 Colorido 100 folhas')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Papelaria/papel A4 Criativo 8 Cores.png" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Papel A4 Criativo 8 cores </h5>
+                    <p class="card-text">O papel A4 colorido com 32 folhas oferece uma seleção vibrante de 8 cores diferentes, ideal para artesanato, projetos escolares e decorações.</p>
+                    <button class="btn btn-success" onclick="produto('Papel A4 Criativo 8 cores')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Papelaria/Papel A4 Multi 500 Folhas eco.png" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Papel A4 Multi 500 folhas </h5>
+                    <p class="card-text">O papel A4 Multi com 500 folhas é a escolha perfeita para quem busca qualidade e versatilidade em impressões. Com acabamento suave, é ideal para uso em impressoras jato de tinta e laser, garantindo impressões nítidas e consistentes. </p>
+                    <button class="btn btn-success" onclick="produto('Papel A4 Multi 500 folhas')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Papelaria/Papel A4 Pacotes.png" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Papel A4 Pacotes </h5>
+                    <p class="card-text">Nossos pacotes de papel A4 são ideais para suprir as necessidades do dia a dia, tanto em escritórios quanto em ambientes domésticos.</p>
+                    <button class="btn btn-success" onclick="produto('Pacotes de papel A4 ')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Papelaria/Papel A4 Rosa 100 Folhas.png" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Papel A4 Rosa 100 folhas</h5>
+                    <p class="card-text">O papel A4 rosa com 100 folhas é ideal para adicionar um toque de cor aos seus projetos. Com qualidade superior, é perfeito para impressões, convites, artesanato e trabalhos escolares.</p>
+                    <button class="btn btn-success" onclick="produto('Papel A4 Rosa 100 folhas')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Papelaria/Papel Vegetal A4.jpg" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Papel Vegetal A4 </h5>
+                    <p class="card-text">O papel vegetal A4 é uma opção elegante e sofisticada para diversas aplicações. Com sua transparência característica, é ideal para fazer sobreposições, desenhos, projetos de arquitetura e apresentações criativas.</p>
+                    <button class="btn btn-success" onclick="produto('Papel Vegetal A4')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="cards">
+                <div class="card" style="width: 18rem; height: auto;">
+                  <img src="Imagens/Produtos/Papelaria/papel-celofane.jpg" class="card-img-top" alt="..." height="200px" width="200px">
+                  <div class="card-body">
+                    <h5 class="card-title"> Papel Vegetal A4 </h5>
+                    <p class="card-text">O papel celofane é uma opção versátil e brilhante, ideal para embalagens e projetos criativos. Com sua transparência e resistência, é perfeito para envolver presentes, criar decorações festivas ou adicionar um toque especial a arranjos florais. </p>
+                    <button class="btn btn-success" onclick="produto('Papel Celofane A4')">Comprar</button>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+    </dialog>
+    
+      <!--Mariais Escolares-->
+      <dialog id="escolares_box" style="display: none;">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: #2cb0d8;">
+              <h1 class="titulo-modal-cat">MATERIAIS ESCOLARES</h1>
+              <button class="btn-close" onclick="escolares_box.close(), togglemodal('escolares_box')"></button>
+            </div>
+            <div class="modal-body">
+              <div class="grade-modal">
+    
+                <!--Itens-->
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Materiais Escolares/Apontador c  Depósito Faber Castel.webp" class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Apontador c/ Depósito - FaberCastell </h5>
+                      <p class="card-text">Apontador com lâmina de aço temperado para garantir maior facilidade ao apontar e depósito em formato triangular ergonômico para reter sujeira.</p>
+                      <button class="btn btn-success" onclick="produto('Apontador c/ Depósito - FaberCastell')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Materiais Escolares/Borracha Faber Castell.jpeg" class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Borracha - FaberCastell </h5>
+                      <p class="card-text">A borracha FC Max da Faber Castell é de alta qualidade e eficiente ao apagar, contendo uma capa para evitar sujeira.</p>
+                      <button class="btn btn-success" onclick="produto('Borracha FC Max - FaberCastell')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Materiais Escolares/Caderno Capa Dura.jpeg" class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Caderno Capa Dura </h5>
+                      <p class="card-text">Caderno de capa dura com 96 folhas e área de identificação para uso escolar, profissional ou pessoal com design simples e margem para muita criatividade.</p>
+                      <button class="btn btn-success" onclick="produto('Caderno Capa Dura ')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Materiais Escolares/Caderno de Cartográfia Espiral.jpg" class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Caderno de Cartografia </h5>
+                      <p class="card-text">Caderno de capa dura com 96 folhas em branco para se dedicar à escrita, desenho ou outra coisa!</p>
+                      <button class="btn btn-success" onclick="produto('Caderno de Cartografia')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Materiais Escolares/Caneta Esferográfica Bic.webp" class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Caneta Eferográfica </h5>
+                      <p class="card-text">Velha companheira de muitos, a tão conhecida caneta esferográfica em três cores: vermelho, azul e preto para continuar contigo em sua jornada.</p>
+                      <button class="btn btn-success" onclick="produto('Caneta Eferográfica')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Materiais Escolares/Cola Branca 110g.webp" class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Cola Branca 110g </h5>
+                      <p class="card-text">Cola branca lavável com tampa anti-vazamentos e anti-entupimentos, a mais recomendada para uso escolar.</p>
+                      <button class="btn btn-success" onclick="produto('Cola Branca 110g')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Materiais Escolares/Compasso de Metal.png" class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Compasso de Metal </h5>
+                      <p class="card-text">Ferramenta construída em aço inoxidável para auxiliar no processo de desenhar círculos com 30cm de diâmetro máximo.</p>
+                      <button class="btn btn-success" onclick="produto('Compasso de Metal')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Materiais Escolares/Kit Marca texto Jocar Office.webp" class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Kit Marca Texto - Jocar Oficce </h5>
+                      <p class="card-text">Conjunto de marca textos Jocar com 6 cores pastéis e um corpo soft touch, deixe seus textos e anotações estilizados com eles!</p>
+                      <button class="btn btn-success" onclick="produto('Kit Marca Texto - Jocar Oficce')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Materiais Escolares/Labis de Escrever Nº2 Faber Castel.jpg" class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Lápis de Escrever Nº2 - FeberCastell </h5>
+                      <p class="card-text">EcoLápis no formato sextavado para conforto ao segurar, escrita macia com traço escuro e ótima apagabiliade.</p>
+                      <button class="btn btn-success" onclick="produto('Lápis de Escrever Nº2 - FeberCastell')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Materiais Escolares/Lapis de Cor Leo&Leo.webp" class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Lápis de Cor Leo&Leo </h5>
+                      <p class="card-text">Lápis sustentáveis e duradouros no formato sextavado, garantindo conforto na pegada, em 12 cores vibrantes, mais 4  lápis grafite HB, 1 apontador com depósito e 1 borracha.</p>
+                      <button class="btn btn-success" onclick="produto('Lápis de Cor Leo&Leo')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Materiais Escolares/ReguaAcrilica20cm.webp" class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Régua Acrílica 20cm</h5>
+                      <p class="card-text">Régua transparente com comprimento de 20 centímetros e escalas precisas de milímetro em milímetro.</p>
+                      <button class="btn btn-success" onclick="produto('Régua Acrílica 20cm')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="cards">
+                  <div class="card" style="width: 18rem; height: auto;">
+                    <img src="Imagens/Produtos/Materiais Escolares/Tesoura Sem Ponta.jpeg" class="card-img-top" alt="..." height="200px" width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title"> Tesoura s/ Ponta </h5>
+                      <p class="card-text">Tesoura escolar não recomendada para crianças acima de 4 anos por conter partes que podem ser engolidas, com pontas arredondadas.</p>
+                      <button class="btn btn-success" onclick="produto('Tesoura s/ Ponta')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+    
+              </div>
+            </div>
+          </div>
+      </dialog>
+    
+    <!---FIM DOS MODAIS DE PRODUTOS-->
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="https://www.google.com/"><img class="d-block w-100" src="Imagens/4.png" alt="First slide" style="height: auto; width: 100%;"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://www.google.com/"><img class="d-block w-100" src="Imagens/5.png" alt="Second slide" style="height: auto; width: 100%;"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://www.google.com/"><img class="d-block w-100" src="Imagens/6.png" alt="Third slide" style="height: auto; width: 100%;"></a>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+  <div style="height: 180px;"></div>
+
+
+  <div class="botaorows">
+    <button class="botoes" onclick="papelaria_box.showModal(), togglemodal('papelaria_box')">PAPELARIA</button>
+        <button class="botoes" onclick="escritorio_box.showModal(), togglemodal('escritorio_box')">ESCRITÓRIO</button>
+        <button class="botoes" onclick="escolares_box.showModal(), togglemodal('escolares_box')">ESCOLARES</button>
+        <button class="botoes" onclick="armarinho_box.showModal(), togglemodal('armarinho_box')">ARMARINHO</button>
+        <button class="botoes" onclick="brinquedos_box.showModal(), togglemodal('brinquedos_box')" id="botoes5">BRINQUEDOS EDUCATIVOS</button>
+  </div>
+
+
+  <div style="height: 50px;"></div>
+
+  <h2 style="margin-left: 10vw;">Produtos de Papelaria</h2>
+
+  <div class="mainrow">
+  <div class="cardrowlateral"></div>
+  <div class="cardrow">
+    <div class="cards">
+      <div class="card">
+        <img src="Imagens/Produtos/Produtos de Papelaria/Papel A4 500 Folhas.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-title-div">
+            <h5 class="card-title">Papel A4 Branco 500 Folhas - CHAMEX</h5>
+          </div>
+          <div class="card-text-div">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card-button-div">
+            <button class="btn btn-success" onclick="produto('A4 Branco, 500 folhas -CHAMEX')">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="Imagens/Produtos/Produtos de Papelaria/Papel A4 Branco 100 Folhas.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-title-div">
+            <h5 class="card-title">Papel A4 Branco 100 Folhas - CHAMEQUINHO</h5>
+          </div>
+          <div class="card-text-div">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card-button-div">
+            <button class="btn btn-success" onclick="produto('A4 Branco, 100 folhas-CHAMEQUINHO')">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="Imagens/Produtos/Produtos de Papelaria/Papel A4 Branco 50 Folhas.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-title-div">
+            <h5 class="card-title">Papel A4 Branco 50 Folhas - CHAMEQUINHO</h5>
+          </div>
+          <div class="card-text-div">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card-button-div">
+            <button class="btn btn-success" onclick="produto('A4 Branco, 50 folhas-CHAMEQUINHO')">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="Imagens/Produtos/Produtos de Papelaria/Papel A4 Color Set.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-title-div">
+            <h5 class="card-title">Papel A4 Color Set 100 Folhas - CHAMEQUINHO</h5>
+          </div>
+          <div class="card-text-div">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card-button-div">
+            <button class="btn btn-success" onclick="produto('A4 Color Set, 100 folhas-CHAMEQUINHO')">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="Imagens/Produtos/Produtos de Papelaria/Papel A4 Colorido 100 Folhas.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-title-div">
+            <h5 class="card-title">Papel A4 Branco 500 Folhas - CHAMEX</h5>
+          </div>
+          <div class="card-text-div">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card-button-div">
+            <button class="btn btn-success" onclick="produto('A4 color set, 100 folhas -CHAMEX')">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="Imagens/Produtos/Produtos de Papelaria/papel A4 Criativo 8 Cores.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-title-div">
+            <h5 class="card-title">Papel A4 8 cores 32 Folhas - CHAMEX</h5>
+          </div>
+          <div class="card-text-div">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card-button-div">
+            <button class="btn btn-success" onclick="produto('A4 8 cores, 32 folhas -CHAMEX')">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="Imagens/Produtos/Produtos de Papelaria/Papel A4 Pacotes.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-title-div">
+            <h5 class="card-title">Pacotes de papel A4</h5>
+          </div>
+          <div class="card-text-div">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card-button-div">
+            <button class="btn btn-success" onclick="produto('Pacotes de papel A4')">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="vermais btn btn-light" onclick="papelaria_box.showModal(), togglemodal('papelaria_box')">Ver Mais</button>
+  </div>
+    <div class="cardrowlateral"></div>
+  </div>
+
+  <div style="height: 100px;"></div>
+
+
+
+  <div style="width: 100%; height: 32vw;">
+    <div class="quadromaior1">
+      <div class="quadro">
+        <a href="https://www.instagram.com/papel_arte_papelaria"><img src="Imagens/Instagramquadro1.png" alt="" style="border-radius: 10px; height: 100%; width: 100%;"></a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div style="height: 100px;"></div>
+
+  <h2 style="margin-left: 10vw;">Produtos Escolares</h2>
+
+  <div class="mainrow">
+  <div class="cardrowlateral"></div>
+  <div class="cardrow">
+    <div class="cards">
+      <div class="card">
+        <img src="Imagens/Produtos/Material Escolar/Lápis/Faber-Castell/KitLapisCores+Ecolapis.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-title-div">
+            <h5 class="card-title">Kit Lápis de Cor + EcoLápis - FABER-CASTELL</h5>
+          </div>
+          <div class="card-text-div">
+            <p class="card-text">Kit de lápis resistentes com 12 cores vivas e mais 3 Ecolápis, tudo no formato sextavado ergonômico, garantindo conforto na pegada.</p>
+          </div>
+          <div class="card-button-div">
+            <button class="btn btn-success" onclick="produto('Kit Lápis de Cor + EcoLápis-FABER-CASTELL')">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="Imagens/Produtos/Material Escolar/Lápis/Leo&Leo/Lapis de Cor 12 Cores Eco Leo&Leo.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-title-div">
+            <h5 class="card-title">Lápis de Cor 12 Cores Eco - LEO&LEO</h5>
+          </div>
+          <div class="card-text-div">
+            <p class="card-text">Lápis sustentáveis e duradouros no formato sextavado, garantindo conforto na pegada, em 12 cores vibrantes.</p>
+          </div>
+          <div class="card-button-div">
+            <button class="btn btn-success" onclick="produto('Lápis de Cor 12 Cores Eco-LEO&LEO')">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="Imagens/Produtos/Material Escolar/Borracha/Faber-Castell/Borracha FC Max.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-title-div">
+            <h5 class="card-title">Borracha FC Max - FABER-CASTELL</h5>
+          </div>
+          <div class="card-text-div">
+            <p class="card-text">A borracha FC Max da Faber Castell é de alta qualidade e eficiente ao apagar, contendo uma capa para evitar sujeira.</p>
+          </div>
+          <div class="card-button-div">
+            <button class="btn btn-success" onclick="produto('Borracha FC Max - FABER-CASTELL')">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="Imagens/Produtos/Material Escolar/Cola/Acrilex/Cola Bastão 40g.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-title-div">
+            <h5 class="card-title">Cola Bastão 40g - ACRILEX</h5>
+          </div>
+          <div class="card-text-div">
+            <p class="card-text">Produto atóxico e lavável com ótima praticidade e aderência, tornando fácil a aplicação em projetos. </p>
+          </div>
+          <div class="card-button-div">
+            <button class="btn btn-success" onclick="produto('Cola Bastão 40g - ACRILEX')">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="Imagens/Produtos/Material Escolar/Tesoura/Leo&Leo/Tesoura Escolar Soft.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-title-div">
+            <h5 class="card-title">Tesoura Escolar Soft - LEO&LEO</h5>
+          </div>
+          <div class="card-text-div">
+            <p class="card-text">Tesoura para crianças acima de 4 anos, com pontas arredondadas, cabo emborrachado e encaixe para 3 dedos.</p>
+          </div>
+          <div class="card-button-div">
+            <button class="btn btn-success" onclick="produto('Tesoura Escolar Soft - LEO&LEO')">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="Imagens/Produtos/Material Escolar/Caneta/Leo&Leo/Caneta Hidrografica Plus 12 Cores Hidrocor.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-title-div">
+            <h5 class="card-title">Caneta Hidrográfica Plus 12 Cores - LEO&LEO</h5>
+          </div>
+          <div class="card-text-div">
+            <p class="card-text">12 cores de canetinhas com carga não-tóxica e á base de água para expressar sua criatividade!</p>
+          </div>
+          <div class="card-button-div">
+            <button class="btn btn-success" onclick="produto('Caneta Hidrográfica Plus 12 Cores-LEO&LEO')">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="Imagens/Produtos/Material Escolar/Apontador/Faber-Castell/Apontador Coletor.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-title-div">
+            <h5 class="card-title">Apontador Coletor - FABER-CASTELL</h5>
+          </div>
+          <div class="card-text-div">
+            <p class="card-text">Apontador com depósito retangular e lâmina de aço temperado para garantir maior facilidade ao apontar.</p>
+          </div>
+          <div class="card-button-div">
+            <button class="btn btn-success" onclick="produto('Apontador Coletor - FABER-CASTELL')">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="vermais btn btn-light" onclick="escolares_box.showModal(), togglemodal('escolares_box')">Ver Mais</button>
+  </div>
+  <div class="cardrowlateral"></div>
+  </div>
+
+  <div style="height: 100px;"></div>
+
+  <h2 style="margin-left: 10vw;">Materiais de Escritório</h2>
+  
+  <div class="mainrow">
+  <div class="cardrowlateral"></div>
+  <div class="cardrow">
+    <div class="cards">
+      <div class="card">
+        <img src="Imagens/Produtos/Materiais de Escritório/calculadora-de-mesa.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-title-div">
+            <h5 class="card-title">Calculadora de Mesa</h5>
+          </div>
+          <div class="card-text-div">
+            <p class="card-text">Super econômica é alimentada por pilha AA e se utilizado diariamente, ultrapassa um ano de utilização com a mesma pilha sem necessidade de troca.</p>
+          </div>
+          <div class="card-button-div">
+            <button class="btn btn-success" onclick="produto('Calculadora de Mesa')">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="Imagens/Produtos/Materiais de Escritório/clips_para_papeis.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-title-div">
+            <h5 class="card-title">Clips de papel</h5>
+          </div>
+          <div class="card-text-div">
+            <p class="card-text">Os Clips Para Papéis De Aço Galvanizado N.3 para manter sua documentação organizada com uma embalagem prática contendo 450 unidades.</p>
+          </div>
+          <div class="card-button-div">
+            <button class="btn btn-success" onclick="produto('Clips de papel')">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="Imagens/Produtos/Materiais de Escritório/fita-adesiva.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-title-div">
+            <h5 class="card-title">Fita adesiva - PHENIX TAPE</h5>
+          </div>
+          <div class="card-text-div">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card-button-div">
+            <button class="btn btn-success" onclick="produto('Fita adesiva - PHENIX TAPE')">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="Imagens/Produtos/Materiais de Escritório/Grampeador.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-title-div">
+            <h5 class="card-title">Grampeador - BRW</h5>
+          </div>
+          <div class="card-text-div">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card-button-div">
+            <button class="btn btn-success" onclick="produto('Grampeador - BRW')">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="Imagens/Produtos/Materiais de Escritório/CarimboAutomaticoPago.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-title-div">
+            <h5 class="card-title">Carimbo Automático - YIN'S PAPER</h5>
+          </div>
+          <div class="card-text-div">
+            <p class="card-text">Carimbo Automático Escrita automática com área de impressão 38mm x 14mm.</p>
+          </div>
+          <div class="card-button-div">
+            <button class="btn btn-success" onclick="produto('Carimbo Automático -YINS PAPER')">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="Imagens/Produtos/Materiais de Escritório/envelope-saco-contrato.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-title-div">
+            <h5 class="card-title">Envelopes</h5>
+          </div>
+          <div class="card-text-div">
+            <p class="card-text">Envelope Saco Kraft/Pardo A4 240x340 90g. Marca: T10 OFFICE.</p>
+          </div>
+          <div class="card-button-div">
+            <button class="btn btn-success" onclick="produto('Envelopes')">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="Imagens/Produtos/Materiais de Escritório/etiqueta-pequena-para-preco.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-title-div">
+            <h5 class="card-title">Etiqueta Pequena de Preço</h5>
+          </div>
+          <div class="card-text-div">
+            <p class="card-text">Etiqueta Adesiva Rolo Pequena N2 Aplicação Fácil 22x14mm Uni' é uma etiqueta multiuso, adesiva, ideal para marcação e codificação de produtos.</p>
+          </div>
+          <div class="card-button-div">
+            <button class="btn btn-success" onclick="produto('Etiqueta Pequena de Preço')">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="vermais btn btn-light" onclick="escritorio_box.showModal(), togglemodal('escritorio_box')">Ver Mais</button>
+  </div>
+  <div class="cardrowlateral"></div>
+  </div>
+
+  <div style="height: 100px;"></div>
+
+
+
+  <div class="quadromaior">
+    <div class="quadromedio">
+      <div class="quadro">
+        <a href="telas/tela_plastificacao/plastificacao.html"><img src="Imagens/Plastificacaoquadro.png" alt="" style="border-radius: 10px; height: 100%; width: 100%;"></a>
+      </div>
+    </div>
+    <div class="quadromedio2">
+      <div class="quadromenor">
+        <div class="quadro2">
+          <a href="telas/tela_impressoes/impressoes.html"><img src="Imagens/impressaoquadrof.png" alt="" style="border-radius: 10px; height: 100%; width: 100%;"></a>
+        </div>
+      </div>
+      <div class="quadromenor">
+        <div class="quadro2">
+          <a href="telas/tela_normas/normas.html"><img src="Imagens/formatacaoquadrof.png" alt="" style="border-radius: 10px; height: 100%; width: 100%;"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="espaçoquadrocards"></div>
+
+  <h2 style="margin-left: 10vw;">Armarinho</h2>
+
+  <div class="mainrow">
+  <div class="cardrowlateral"></div>
+  <div class="cardrow">
+    <div class="cards">
+      <div class="card">
+        <img src="Imagens/Produtos/Armarinho/Barbante Cru.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-title-div">
+            <h5 class="card-title">Barbante Cru</h5>
+          </div>
+          <div class="card-text-div">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card-button-div">
+            <button class="btn btn-success" onclick="produto('Barbante Cru')">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="Imagens/Produtos/Armarinho/agulha-croche-tulip-clone.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-title-div">
+            <h5 class="card-title">Agulha Croche</h5>
+          </div>
+          <div class="card-text-div">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card-button-div">
+            <button class="btn btn-success" onclick="produto('Agulha Croche')">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="Imagens/Produtos/Armarinho/agulha-maquina-costura.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-title-div">
+            <h5 class="card-title">Agulha Máquina de Costura</h5>
+          </div>
+          <div class="card-text-div">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card-button-div">
+            <button class="btn btn-success" onclick="produto('Agulha Máquina de Costura')">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="Imagens/Produtos/Armarinho/cordone encerado.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-title-div">
+            <h5 class="card-title">Cordone Encerado</h5>
+          </div>
+          <div class="card-text-div">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card-button-div">
+            <button class="btn btn-success" onclick="produto('Cordone Encerado')">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="Imagens/Produtos/Armarinho/fita de cetim.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-title-div">
+            <h5 class="card-title">Fita de Cetim</h5>
+          </div>
+          <div class="card-text-div">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card-button-div">
+            <button class="btn btn-success" onclick="produto('Fita de Cetim')">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="Imagens/Produtos/Armarinho/perola_adesiva.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-title-div">
+            <h5 class="card-title">Perola Adesiva</h5>
+          </div>
+          <div class="card-text-div">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card-button-div">
+            <button class="btn btn-success" onclick="produto('Perola Adesiva')">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="Imagens/Produtos/Armarinho/Tinta de Tecido - Acrilex.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-title-div">
+            <h5 class="card-title">Tinta de Tecido - ACRILEX</h5>
+          </div>
+          <div class="card-text-div">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card-button-div">
+            <button class="btn btn-success" onclick="produto('Tinta de Tecido - ACRILEX')">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="vermais btn btn-light" onclick="armarinho_box.showModal(), togglemodal('armarinho_box')">Ver Mais</button>
+  </div>
+  <div class="cardrowlateral"></div>
+  </div>
+
+  <div style="height: 100px;"></div>
+
+  <h2 style="margin-left: 10vw;">Brinquedos Educativos</h2>
+
+  <div class="mainrow">
+    <div class="cardrowlateral"></div>
+    <div class="cardrow">
+      <div class="cards">
+        <div class="card">
+          <img src="Imagens/Produtos/Brinquedos Educativos/Abc com 12 peças - Xalingo.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Abc com 12 Peças - XALINGO</h5>
+            <p class="card-text">Conjunto educativo com 12 peças que ajudam as crianças a aprender o alfabeto de forma divertida e interativa.</p>
+            <a href="#" class="btn btn-success" onclick= "produto('Abc com 12 Peças - XALINGO')">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <img src="Imagens/Produtos/Brinquedos Educativos/Blocos Brincando de Engenheiro - Xalingo.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Blocos Brincando de Engenheiro - XALINGO</h5>
+            <p class="card-text">Kit de construção com blocos para montar castelos e outras estruturas, estimulando o raciocínio lógico e a criatividade das crianças.</p>
+            <a href="#" class="btn btn-success" "produto('Blocos Brincando de Engenheiro - XALINGO')">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <img src="Imagens/Produtos/Brinquedos Educativos/Amigos da Escola - Eu Amo Papelão.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Amigos da Escola - EU AMO PAPELÃO</h5>
+            <p class="card-text">Pequenas figuras de papelão em formato de pessoas, ideais para brincadeiras criativas e narrativas.</p>
+            <a href="#" class="btn btn-success" "produto('Amigos da Escola - EU AMO PAPELÃO')">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <img src="Imagens/Produtos/Brinquedos Educativos/Brinquedos Dinamicos de Areia.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Brinquedos Dinâmicos de Areia</h5>
+            <p class="card-text">Areia colorida para modelagem que permite criar formas e esculturas, proporcionando uma experiência sensorial divertida e criativa.</p>
+            <a href="#" class="btn btn-success" "produto('Brinquedos Dinâmicos de Areia')">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <img src="Imagens/Produtos/Brinquedos Educativos/Carocol - Fabrica de Sonhos.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Caracol - FÁBRIKA DOS SONHOS</h5>
+            <p class="card-text">Quebra-cabeça em formato de caracol com peças blocadas, perfeito para desenvolver habilidades motoras e cognitivas.</p>
+            <a href="#" class="btn btn-success" "produto('Caracol - FÁBRIKA DOS SONHOS')">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <img src="Imagens/Produtos/Brinquedos Educativos/torre_donuts_fabrika_dos_sonhos_1061_1_f8e9010232fc184919672ec9a53954da.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Torre Donuts - FÁBRIKA DOS SONHOS</h5>
+            <p class="card-text">O lança argola em forma de donuts é um brinquedo divertido e educativo que ajuda a desenvolver a coordenação motora e precisão das crianças.</p>
+            <a href="#" class="btn btn-success" "produto('Torre Donuts - FÁBRIKA DOS SONHOS')">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <img src="Imagens/Produtos/Brinquedos Educativos/Tablet de desenho magnético - ning.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Tablet de Desenho Magnético - NING</h5>
+            <p class="card-text">Painel de desenho magnético reutilizável, ideal para crianças expressarem sua criatividade sem sujeira.</p>
+            <a href="#" class="btn btn-success" "produto('Tablet de Desenho Magnético - NING')">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+    <button class="vermais btn btn-light" onclick="brinquedos_box.showModal(), togglemodal('brinquedos_box')">Ver Mais</button>
+  </div>
+  <div class="cardrowlateral"></div>
+  </div>
+
+  <div style="height: 100px;"></div>
+
+    <div class="firstroot"></div>
+    <div class="secondroot">
+      <div style="width: 100%; height: 10px;"></div>
+      <div style="width: 15%; height: 100%; float: left;"></div>
+      <div style="width: 27.5%; height: 100%; float: left;">
+        <h2 class="" style="-webkit-text-fill-color: #ff914d; -webkit-text-stroke: 1.5px #03768a; font-weight: bolder;">Ajuda</h2>
+        <ul style="color: #ff914d;">
+          <li><button class="footertext" style="text-decoration-color: #ff914d; text-decoration-line: underline;" onclick="compras_box.showModal(), togglemodal('compras_box')">Compras pelos site</button></li>
+          <li><button class="footertext" style="text-decoration-color: #ff914d; text-decoration-line: underline;" onclick="formas_box.showModal(), togglemodal('formas_box')">Formas de pagamento</button></li>
+          <li><a href="https://www.google.com/maps/place/Papelaria+Papel+Arte/@-23.1199657,-46.5817955,15z/data=!4m2!3m1!1s0x0:0x6cbf573a4e00c584?sa=X&ved=1t:2428&ictx=111" class="footertext" style="text-decoration-color: #ff914d; text-decoration-line: underline;">Localização</a></li>
+        </ul>
+      </div>
+      <div style="width: 15%; height: 100%; float: left;"></div>
+      <div style="width: 27.5%; height: 100%; float: left;">
+        <h2 class="" style="-webkit-text-fill-color: #ff914d; -webkit-text-stroke: 1.5px #03768a; font-weight: bolder;">Fale Conosco</h2>
+        <button class="footerbutton">
+          <a href="https://www.instagram.com/papel_arte_papelaria"><img src="Imagens/instagramlogo.png" style="width: 55%; height: 50%;"></a>
+        </button>
+        <label for="" class="footersecondtext">por Instagram</label><br>
+        <button class="footerbutton">
+          <a href="https://wa.me/5511943536095"><img src="Imagens/whatsapplogo.png" style="width: 55%; height: 50%;"></a>
+        </button>
+        <label for="" class="footersecondtext">por WhatsApp</label><br>
+        <button class="footerbutton">
+          <img src="Imagens/emaillogo.png" style="width: 57%; height: 50%;">
+        </button>
+        <label for="" class="footersecondtext">por Email</label><br>
+      </div>
+      <div style="width: 15%; height: 100%; float: left;"></div>
+    </div>
+    <div class="thirdroot"></div>
+    <div class="fourthroot"></div>
+
+    <!-----_______iNICIO CARRINHO______------>
+    <div id="lugar-lista" class="position-fixed posição-list1" id="lugar" style="z-index: 99;">
+      <button class="btn-lista" id='botão-abre-lista-id'>
+          <img src="Imagens/lista.webp" alt=""class="img-list">
+      </button>
+  </div>
+  <script src="https://kit.fontawesome.com/df93597d93.js" crossorigin="anonymous"></script>
+<!-----________FINAL CARRINHO_______------>
+
+<script src="JS/funçao.js"></script>
+</body>
+</html>
